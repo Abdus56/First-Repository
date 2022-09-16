@@ -1,0 +1,91 @@
+---
+title: "R Basics"
+author: "Abdus Samad"
+date: "2022-09-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Basic
+
+## Use of string and numric in R and different operators
+
+
+```{r, echo=FALSE}
+
+ print("first R lesson")
+
+```
+
+```{r, echo=FALSE}
+print(23)
+
+```
+## using <- Operator
+
+```{r, echo=FALSE}
+x <- "first R lesson"
+x
+```
+## Use of catcatenation
+
+```{r, echo=FALSE}
+
+z <- "first"
+
+cat(z, "R lesson")
+sprintf("%s R lesson.", z)
+
+```
+
+
+```{r, echo=FALSE}
+y <- "Cube"
+cat(y, "Statistica Cohort 1.")
+sprintf("%s Statistica Cohort 1.",y)
+
+```
+## use = operator
+
+```{r, echo=FALSE}
+a = 50
+a
+```
+```{r, echo=FALSE}
+50 -> c -> b
+b
+c
+height <- abdus <- 5.9
+height
+abdus
+```
+
+## Writing Basic Function
+
+```{r, echo=FALSE}
+f_Name <- function(argument){
+  "I'm enrolled in Data Science Cube Stattistica Course"
+}
+f_Name
+```
+```{r echo=FALSE}
+f_Name("I am excited about this course")
+
+```
+## Function for x power y
+
+```{r}
+
+power <- function(x,y){
+  p <- x^y
+print(paste(x," raised to the power", y, " is", p))
+}
+  
+```
+```{r}
+power(4,5)
+```
+
